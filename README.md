@@ -51,7 +51,7 @@ dependència suplementària.
     git clone https://github.com/jordi-petit/ap2-imatges.git
     ```
 
-1.  Compileu el [programa de prova](prova.cc):
+1.  Examineu el programa de prova:
 
     ```bash
     # entreu al repositori amb l'activitat que heu baixat
@@ -59,7 +59,32 @@ dependència suplementària.
 
     # mireu el programa prova.cc
     cat prova.cc
+    ```
 
+    El programa pinta una corba sinossuidal en un fitxer `prova.png`
+    de mida 400×400 utilitzant un objecte `png`:
+
+    ```c++
+    #include <pngwriter.h>
+
+    #include <cmath>
+    using namespace std;
+
+    int main() {
+        const int size = 400;
+        pngwriter png(size, size, 0, "prova.png");
+        for (int x = 0; x < size; x++) {
+            int y = size/2 + (size/2-1) * sin(x / double(size) * 4 * M_PI);
+            png.plot(x, y, 1.0, 1.0, 1.0);
+        }
+        png.close();
+    }
+    ```
+
+
+1.  Compileu el [programa de prova](prova.cc):
+
+    ```bash
     # compileu el programa prova.cc
     g++ -Wall -std=c++11 -O2 -DNO_FREETYPE -I $HOME/libs/include prova.cc -L $HOME/libs/lib -l PNGwriter -l png -o prova.x
 
