@@ -69,13 +69,13 @@ dependència suplementària.
     # mireu el fitxer prova.png amb algun visor d'imatges
     ```
 
-    El programa hauria de produir aquesta imatge (`prova.png`):
+    El programa hauria de produir aquesta imatge al fitxer `prova.png`:
 
     ![](resultat.png)
 
     Fixeu-vos que per compilar el programa:
 
-    - S'indica que no es vol usar la lliberia FreeType.
+    - S'indica que no es vol usar la lliberia FreeType (no ens cal).
     - S'indica amb el `-I` en quin directori cal buscar els *includes*.
     - S'indica amb el `-L` en quin directori cal buscar les llibreries.
     - S'indica amb el `-l` amb quines llibreries cal enllaçar (la primera
@@ -83,9 +83,11 @@ dependència suplementària.
 
 1.  Creu un `Makefile` per compilar amb `make` i esborrar l'executable amb `make clean`.
 
-1.  Consulteu la [documentació de pngwriter](http://pngwriter.sourceforge.net/)
+1.  Consulteu [la documentació de pngwriter](http://pngwriter.sourceforge.net/)
 per fer que el programa pinti quelcom interessant utilitzant diferentes
-formes com ara punts, línies i cercles de diferents colors. Sigueu creatius!
+formes com ara punts, línies i cercles de diferents colors.
+Per exemple, podeu dibuixar un ninot de neu, o un histograma o un fractal...
+Sigueu creatius!
 
 
 
