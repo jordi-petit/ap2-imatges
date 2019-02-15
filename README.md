@@ -45,7 +45,7 @@ dependència suplementària.
 
 
 1.  Ara provareu la llibreria.
-    Aneu en algun directori temporal i baixeu aquesta activitat.
+    Aneu en algun directori temporal i baixeu-hi aquesta activitat.
 
     ```bash
     git clone https://github.com/jordi-petit/ap2-imatges.git
@@ -61,8 +61,8 @@ dependència suplementària.
     cat prova.cc
     ```
 
-    El programa pinta una corba sinossuidal en un fitxer `prova.png`
-    de mida 400×400 utilitzant un objecte `png`:
+    El programa pinta una corba sinusoïdal blanca en un fitxer `prova.png`
+    de 400×400 pixels amb fons negre utilitzant un objecte `png`:
 
     ```c++
     #include <pngwriter.h>
@@ -82,7 +82,7 @@ dependència suplementària.
     ```
 
 
-1.  Compileu el [programa de prova](prova.cc):
+1.  Compileu el programa de prova:
 
     ```bash
     # compileu el programa prova.cc
@@ -100,6 +100,7 @@ dependència suplementària.
 
     Fixeu-vos que per compilar el programa:
 
+    - S'indiquen els flags habituals.
     - S'indica que no es vol usar la lliberia FreeType (no ens cal).
     - S'indica amb el `-I` en quin directori cal buscar els *includes*.
     - S'indica amb el `-L` en quin directori cal buscar les llibreries.
@@ -111,7 +112,7 @@ dependència suplementària.
 1.  Consulteu [la documentació de pngwriter](http://pngwriter.sourceforge.net/)
 per fer que el programa pinti quelcom interessant utilitzant diferentes
 formes com ara punts, línies i cercles de diferents colors.
-Per exemple, podeu dibuixar un ninot de neu, o un histograma o un fractal...
+Per exemple, podeu dibuixar un ninot de neu, un histograma o un fractal...
 Sigueu creatius!
 
 
