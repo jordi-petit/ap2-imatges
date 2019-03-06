@@ -147,4 +147,6 @@ paquets `libpng-tools` i `cmake`.
 sudo apt install cmake libpng-tools
 ```
 
+## Eines en Windows
 
+Eign?
