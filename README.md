@@ -40,8 +40,18 @@ dependència suplementària.
     s'instal·larà la llibreria (en aquest cas, al directori `libs` sota el vostre
     directori principal, referit per la variable d'entorn `$HOME`).
 
-    Un cop compilada i instal·lada la llibreria, examineu els directoris
-    `include` i `lib` dins de `$HOME/libs`.
+    Un cop compilada i instal·lada la llibreria, el seu codi ja no us cal
+    (perquè el teniu ja en forma de llibreria a `$HOME/libs`). Per tant,
+    podeu esborrar-la:
+
+    ```bash
+    cd ..
+    rm -rf pngwriter
+    ```
+    Als directoris
+    `include` i `lib` dins de `$HOME/libs` veureu el que ha quedat instal·lat
+    (això no ho hauríeu d'esborrar).
+
 
 
 1.  Ara provareu la llibreria.
@@ -101,6 +111,10 @@ dependència suplementària.
 
     ![](resultat.png)
 
+    Podeu visualitzar el fitxer `prova.png` amb `open resultat.png` en Mac o
+    `display resultat.png` en Linux (o qualsevol altra comanda per visualitzar
+    imatges).
+
     Fixeu-vos que per compilar el programa:
 
     - S'indiquen els flags habituals.
@@ -122,6 +136,21 @@ Sigueu creatius!
 
 
 # Apèndix
+
+## Eines a la FME
+
+Malauradament, el `cmake` no està instal·lat als ordinadors en Linux de la FME.
+Us heu de baixar [aquest paquet](https://github.com/Kitware/CMake/releases/download/v3.12.4/cmake-3.12.4-Linux-x86_64.tar.gz)
+i descomprimir-lo en algun directori, diguem-ne `DIR`. Llavors,
+la comanda `cmake` la escriviu com a `$DIR/bin/cmake`:
+
+```bash
+# $DIR és el directori on heu descomprimit el paquet del cmake
+$DIR/bin/cmake -DPNGwriter_USE_FREETYPE=OFF -DCMAKE_INSTALL_PREFIX=$HOME/libs .
+```
+
+Un cop fet, ja no us cal més el `cmake`.
+
 
 ## Eines en Mac
 
