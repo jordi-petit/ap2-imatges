@@ -112,12 +112,27 @@ dependència suplementària.
 
 1.  Creu un `Makefile` per compilar amb `make` i esborrar l'executable amb `make clean`.
 
-1.  Consulteu [la documentació de pngwriter](http://pngwriter.sourceforge.net/)
+    Compte: Als makefiles, les variables han d'anar entre parèntesis i amb dòlars: `$(HOME)`.
+
+1.  Consulteu [la documentació de pngwriter](http://pngwriter.sourceforge.net/manual-en.php)
 per fer que el programa pinti quelcom interessant utilitzant diferentes
 formes com ara punts, línies i cercles de diferents colors.
 Per exemple, podeu dibuixar un ninot de neu, un histograma o un fractal...
 Sigueu creatius!
 
 
+# Apèndix per a Mac
+
+Sembla que en Mac potser cal que us instal·leu els
+paquets `cmake` i `libpng`. Recomanem que utilitzeu
+el gestor de paquets (https://brew.sh/index_ca)[brew]:
+
+```bash3
+# instal·la brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# instal·la cmake i libpng
+brew install cmake libpng
+```
 
 
