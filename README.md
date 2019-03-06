@@ -121,11 +121,14 @@ Per exemple, podeu dibuixar un ninot de neu, un histograma o un fractal...
 Sigueu creatius!
 
 
-# Apèndix per a Mac
+# Apèndix
+
+## Eines en Mac
 
 Sembla que en Mac potser cal que us instal·leu els
 paquets `cmake` i `libpng`. Recomanem que utilitzeu
-el gestor de paquets (https://brew.sh/index_ca)[brew]:
+el gestor de paquets [brew](https://brew.sh/index_ca)
+si no el teniu encara:
 
 ```bash
 # instal·la brew
@@ -135,7 +138,7 @@ el gestor de paquets (https://brew.sh/index_ca)[brew]:
 brew install cmake libpng
 ```
 
-# Apèndix per a Ubuntu
+## Eines en Ubuntu
 
 Sembla que en Ubuntu potser cal que us instal·leu els
 paquets `libpng-tools` i `cmake`.
