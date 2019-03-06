@@ -25,7 +25,7 @@ dependència suplementària.
     cd pngwriter
 
     # prepareu la compilació amb algunes opcions
-    cmake -DPNGwriter_USE_FREETYPE=OFF -DCMAKE_INSTALL_PREFIX=$HOME/libs
+    cmake -DPNGwriter_USE_FREETYPE=OFF -DCMAKE_INSTALL_PREFIX=$HOME/libs .
 
     # compileu la llibreria
     make
@@ -127,12 +127,21 @@ Sembla que en Mac potser cal que us instal·leu els
 paquets `cmake` i `libpng`. Recomanem que utilitzeu
 el gestor de paquets (https://brew.sh/index_ca)[brew]:
 
-```bash3
+```bash
 # instal·la brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # instal·la cmake i libpng
 brew install cmake libpng
+```
+
+# Apèndix per a Ubuntu
+
+Sembla que en Ubuntu potser cal que us instal·leu els
+paquets `libpng-tools` i `cmake`.
+
+```bash
+sudo apt install cmake libpng-tools
 ```
 
 
