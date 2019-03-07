@@ -138,6 +138,9 @@ dependència suplementària. Mireu l'apèndix final.
 
     ![](mireia.png)
 
+1.  Pengeu les vostres creacions al [google drive](https://drive.google.com/drive/folders/1Z9tHIDCQigO-j4PXq9C3disgJywKlvEC?usp=sharing).
+    La millor imatge guanyarà un fabulós premi!
+
 
 # Apèndix
 
