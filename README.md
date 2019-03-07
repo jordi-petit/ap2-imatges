@@ -4,9 +4,9 @@ Aquesta activitat mostra com baixar una llibreria de codi obert
 per a crear senzillament imatges en C++, com instal·lar-la i com usar-la.
 
 S'ha comprovat que els passos donats funcionin correctament als
-ordinadors de la FIB. Falta comprovar-ho a la FME. En Mac OS també
+ordinadors de la FIB. En Mac OS també
 funcionen. Per altres sistemes potser haureu d'instal·lar alguna
-dependència suplementària.
+dependència suplementària. Mireu l'apèndix final.
 
 
 ## Guió de l'activitat
@@ -129,10 +129,14 @@ dependència suplementària.
     Compte: Als makefiles, les variables han d'anar entre parèntesis i amb dòlars: `$(HOME)`.
 
 1.  Consulteu [la documentació de pngwriter](http://pngwriter.sourceforge.net/manual-en.php)
-per fer que el programa pinti quelcom interessant utilitzant diferentes
-formes com ara punts, línies i cercles de diferents colors.
-Per exemple, podeu dibuixar un ninot de neu, un histograma o un fractal...
-Sigueu creatius!
+    per fer que el programa pinti quelcom interessant utilitzant diferentes
+    formes com ara punts, línies i cercles de diferents colors.
+    Per exemple, podeu dibuixar un ninot de neu, un histograma o un fractal...
+    Sigueu creatius!
+
+    Per exemple, la Mireia ha fet això:
+
+    ![](mireia.png)
 
 
 # Apèndix
