@@ -176,11 +176,10 @@ brew install cmake libpng
 
 ## Eines en Ubuntu
 
-Sembla que en Ubuntu potser cal que us instal·leu els
-paquets `libpng-tools` i `cmake`.
+Sembla que en Ubuntu potser cal que us instal·leu aquests paquets:
 
 ```bash
-sudo apt install cmake libpng-tools
+sudo apt install cmake libpng16-tools libpng16-devtools 
 ```
 
 ## Eines en Windows
