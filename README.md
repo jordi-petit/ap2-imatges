@@ -185,3 +185,4 @@ sudo apt install cmake libpng16-tools libpng16-devtools
 ## Eines en Windows
 
 Eign?
+https://es.wikipedia.org/wiki/Suicidio
